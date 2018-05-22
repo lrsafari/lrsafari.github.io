@@ -120,9 +120,10 @@
 
 	p-box {
 		font-size: 1.0em;
-		letter-spacing: .15em;
+		letter-spacing: .10em;
 		line-height: .75em;
 		font-weight: 500;
+		text-align: justify;
 		text-shadow: 0px 1px 3px #3A3A3A;
 		}
 
@@ -1181,8 +1182,10 @@
 /*********************************************************************************/
 
 	#two {
-		background: url('images/overlay.png'), url('../images/two.jpg');
-		background-size: 256px 256px, cover;
+		background-color: white;
+		background: url('images/overlay.png'), url(../images/flowchart.png);'
+		opacity= .25;
+		background-size: 1024px 1024px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, center center;
 	}
