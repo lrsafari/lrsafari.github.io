@@ -76,7 +76,7 @@ ul li:hover a {
 }
 /* Hero Section */
 .hero {
-	background-color: #B3B3B3;
+/*	background-color: #B3B3B3;*/
 	padding-top: 93px;
 	padding-bottom: 93px;
 }
@@ -152,8 +152,8 @@ ul li:hover a {
 /* Parallax Section */
 .banner {
 	background-color: #2D9AB7;
-	background-image: url(../images/parallax.png);
-	height: 400px;
+	background-image: url(../sMiller-Heavy_Iron_MidTerm/images/SuperMicro_Brochure-Parallax.jpg);
+	height: 333px;
 	background-attachment: fixed;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -185,10 +185,11 @@ footer {
 	padding-bottom: 35px;
 }
 .footer_column {
-	width: 50%;
+	width: auto%;
 	text-align: center;
 	padding-top: 30px;
-	float: left;
+	float: center;
+	border: 0, 1;
 }
 footer .footer_column h3 {
 	color: #B3B3B3;
