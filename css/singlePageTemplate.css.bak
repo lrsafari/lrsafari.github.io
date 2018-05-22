@@ -61,7 +61,7 @@ ul li a {
 	color: #FFFFFF;
 	text-decoration: none;
 }
-ul li :hover a {
+ul li:hover a {
 	color: #2C9AB7;
 }
 .hero_header {
@@ -156,7 +156,7 @@ ul li :hover a {
 	height: 333px;
 	background-attachment: fixed;
 	background-size: cover;
-background-repeat: no-repeat;
+	background-repeat: no-repeat;
 }
 .parallax {
 	color: #FFFFFF;
