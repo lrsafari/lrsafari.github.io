@@ -47,7 +47,7 @@
 	h1,h2,h3,h4,h5,h6 {
 		font-weight: 900;
 		color: inherit;
-		letter-spacing: .04em;
+		letter-spacing: .1em;
 		word-spacing: .1em;
 	}
 	
@@ -58,7 +58,7 @@
 		
 	h2 {
 		font-size: 2.25em;
-		letter-spacing: -2px;
+		letter-spacing: .01em;
 		line-height: 1.25em;
 	}
 		
