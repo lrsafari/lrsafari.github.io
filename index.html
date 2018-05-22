@@ -8,13 +8,34 @@
 		
 		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
 		
+		
+			<!-------- COMMENTS HERE --------->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<script src="js/bootstrap.min.js"></script>
+
+		
+<!----------------- Server Versions of Bootstrap. Local Above for Preview ---------------------------------
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+-->
+		
 		<script src="js/jquery.min.js"></script>
 		<script src="js/jquery.poptrox.min.js"></script>
 		<script src="js/skel.min.js"></script>
 		<script src="js/init.js"></script>
 		
+		<!-------- JS/BootStrap ToolTips --------->
+		<script>
+			$(document).ready(function()
+				{
+					$('[data-toggle="tooltip"]').tooltip();   
+				});
+		</script>
+		
+		
 		<noscript>
-			
 			<link rel="stylesheet" href="css/skel-noscript.css" />
 			<link rel="stylesheet" href="css/style.css" />
 		</noscript>
@@ -47,9 +68,17 @@
 			<section id="intro" class="main style1 dark fullscreen">
 				<div class="content container small">
 					<header>
-					  <h2>Finally!</h2>
+					  <h2 class="wide">Finally!</h2>
+						
 					</header>
-				  <p>I have something to show for my <strong>"Squireling"</strong>.<br>That thing when I know I can do something seriously powerful,<br>but spend hours learning how to fine tune <strong>Grid</strong> or <strong>Transitions.</strong></p>
+						<p>Something to show for my 
+							<strong href="#" data-toggle="tooltip" 
+							title="Sudden distraction or A.D.D. lapse in time!">"Squireling"</strong>.
+							<br>That thing when I know I can do something seriously powerful,<br> 
+							but spend hours learning how to fine tune 
+							<strong href="#" data-toggle="tooltip" title="CSS Tricks: Grid">Grid</strong> or 
+							<strong href="https://daneden.github.io/animate.css/" data-toggle="tooltip"
+							title="Animate CSS">Transitions.</strong></p>
 					
 					<footer>
 						<a href="#one" class="button style2 down">More</a>
