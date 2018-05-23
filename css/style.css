@@ -14,6 +14,10 @@
 				format('svg');font-weight:normal;font-style:normal
 		}
 
+		.fa-twitter-square:before{content:"\f081"}
+
+
+
 /*********************************************************************************/
 /* Basic                                                                         */
 /*********************************************************************************/
@@ -315,8 +319,9 @@
 				padding-left: 0.25em;
 			}
 
-
-	/* Forms */
+/* =============================================================== */
+/* ========= Forms =============================================== */
+/* =============================================================== */
 
 		form {
 		}
@@ -397,8 +402,11 @@
 			form ::-moz-focus-inner {
 				border: 0;
 			}
-			
-	/* Tables */
+	
+
+/* =============================================================== */
+/* ========= Tables ===============================================*/
+/* ================================================================*/
 	
 		table {
 			width: 100%;
@@ -434,7 +442,11 @@
 				table.default tbody {
 				}
 
-	/* Buttons */
+
+
+/* =============================================================== */
+/* ========= Buttons ==============================================*/
+/* ================================================================*/
 		
 		.button {
 			background-color: #98c593;
@@ -511,7 +523,11 @@
 					background-image: url('images/arrow.svg');
 				}
 
-	/* Box */
+
+
+/* =============================================================== */
+/* ========= Box ================================================= */
+/* =============================================================== */
 
 		.box {
 			background: #fff;
@@ -524,7 +540,11 @@
 				opacity: .85;
 			}
 
-	/* Main */
+
+
+/* =============================================================== */
+/* ========= Main ================================================ */
+/* =============================================================== */
 		
 		.main {
 			position: relative;
@@ -636,28 +656,28 @@
 					background: #f5f6f7;
 				}
 
-	/* Dark */
+
+/* =============================================================== */
+/* ========= Dark ================================================ */
+/* =============================================================== */
 
 		.dark {
-			color: #fff;
-		}
-
-			.dark a {
 				color: #fff;
-			}
-		
-			.dark .button.style2 {
-				border-color: inherit;
-				background-color: rgba(64,64,64,0.05);
-			}
+			}	
+				.dark a {
+						color: #fff;
+					}
+						.dark .button.style2 {
+								border-color: inherit;
+								background-color: rgba(64,64,64,0.05);
+							}
+								.dark .button.style2:hover {
+										background-color: rgba(255,255,255,0.1);
+									}
+										.dark .button.style2.down {
+											background-image: url('images/dark-arrow.svg');
+											}
 
-				.dark .button.style2:hover {
-					background-color: rgba(255,255,255,0.1);
-				}
-				
-				.dark .button.style2.down {
-					background-image: url('images/dark-arrow.svg');
-				}
 
 
 /*********************************************************************************/
@@ -732,21 +752,21 @@
 /* Intro                                                                         */
 /*********************************************************************************/
 
-	#intro {
-		background: url('images/overlay.png'), url('../images/intro.jpg');
-		background-size: 256px 256px, cover;
-		background-attachment: fixed, fixed;
+	#home {
+		
+		background: url('../images/defender.jpg');
+		background-size: cover;
+		background-attachment: fixed;
 		background-position: top left, bottom center;
-		background-repeat: repeat, no-repeat;
+		background-repeat: no-repeat;
 	}
 
 /*********************************************************************************/
 /* One                                                                           */
 /*********************************************************************************/
 
-	#one {
-		background-color: white;
-		background: url('images/overlay.png'), url('../images/smc.jpg');
+	#final {
+		background: url('../images/smc.jpg');
 		opacity= .25;
 		background-size: 1024px 1024px, cover;
 		background-attachment: fixed, fixed;
@@ -757,8 +777,8 @@
 /* Two                                                                           */
 /*********************************************************************************/
 
-	#two {
-		background-color: white;
+	#midterm {
+/*		background-color: white;*/
 		background: url('images/overlay.png'), url(../images/flowchart.png);'
 		opacity= .25;
 		background-size: 1024px 1024px, cover;
@@ -768,16 +788,16 @@
 
 
 /*********************************************************************************/
-/* Work                                                                          */
+/* resume                                                                          */
 /*********************************************************************************/
 
-	#work {
+	#resume {
 	}
 	
-		#work .row.images {
+		#resume .row.images {
 		}
 	
-			#work .row.images .image {
+			#resume .row.images .image {
 				position: relative;
 				top: 0;
 				left: 0;
@@ -796,18 +816,18 @@
 				transform: translateZ(0);
 			}
 		
-			#work .row.images.inactive {
+			#resume .row.images.inactive {
 			}
 
-				#work .row.images.inactive .image {
+				#resume .row.images.inactive .image {
 					opacity: 0;
 				}
 			
-				#work .row.images.inactive .image.l {
+				#resume .row.images.inactive .image.l {
 					left: -14em;
 				}
 			
-				#work .row.images.inactive .image.r {
+				#resume .row.images.inactive .image.r {
 					left: 14em;
 				}
 			
@@ -904,151 +924,91 @@
 
 
 /*********************************************************************************/
-/* Poptrox                                                                       */
+/* Icons                                                                         */
+/* Powered by Font Awesome by Dave Gandy | http://fontawesome.io                 */
+/* Licensed under the SIL OFL 1.1 (font), MIT (CSS)                              */
 /*********************************************************************************/
 
-	.poptrox-popup {
-		background: #fff;
-		-moz-box-sizing: content-box;
-		-webkit-box-sizing: content-box;
-		-o-box-sizing: content-box;
-		-ms-box-sizing: content-box;
-		box-sizing: content-box;
-		padding-bottom: 3em;
-		box-shadow: 0 0.1em 0.15em 0 rgba(0,0,0,0.15);
-	}
-	
-		.poptrox-popup .loader {
-			width: 48px;
-			height: 48px;
-			background: url('images/loader.gif');
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			margin: -24px 0 0 -24px;
+	@font-face
+		{
+			font-family:'FontAwesome';
+				src:url('font/fontawesome-webfont.eot?v=4.0.1');
+				src:url('font/fontawesome-webfont.eot?#iefix&v=4.0.1') format('embedded-opentype'),
+				url('font/fontawesome-webfont.woff?v=4.0.1') format('woff'),
+				url('font/fontawesome-webfont.ttf?v=4.0.1') format('truetype'),
+				url('font/fontawesome-webfont.svg?v=4.0.1#fontawesomeregular') 
+				format('svg');font-weight:normal;font-style:normal
 		}
-	
-		.poptrox-popup .caption {
-			position: absolute;
-			bottom: 0;
-			left: 0;
-			background: #fff;
-			width: 100%;
-			height: 3em;
-			line-height: 2.8em;
-			text-align: center;
-			cursor: default;
-			z-index: 1;
-			font-size: 0.9em;
-		}
-		
-		.poptrox-popup .nav-next,
-		.poptrox-popup .nav-previous {
-			position: absolute;
-			top: 0;
-			width: 50%;
-			height: 100%;
-			opacity: 0;
-			cursor: pointer;
-			background: rgba(0,0,0,0.01);
-			-moz-transition: opacity 0.2s ease-in-out;
-			-webkit-transition: opacity 0.2s ease-in-out;
-			-o-transition: opacity 0.2s ease-in-out;
-			-ms-transition: opacity 0.2s ease-in-out;
-			transition: opacity 0.2s ease-in-out;
-			-webkit-tap-highlight-color: rgba(255,255,255,0);
+/*********************************************************************************/
+/* Icons                                                                         */
+/* Powered by Font Awesome by Dave Gandy | http://fontawesome.io                 */
+/* Licensed under the SIL OFL 1.1 (font), MIT (CSS)                              */
+/*********************************************************************************/
+
+	.fa {
+			text-decoration: none;
 		}
 
-			.poptrox-popup .nav-next:before,
-			.poptrox-popup .nav-previous:before {
-				content: '';
-				position: absolute;
-				width: 96px;
-				height: 64px;
-				background: url('images/poptrox-nav.svg');
-				top: -moz-calc(50% - 1.5em);
-				top: -webkit-calc(50% - 1.5em);
-				top: -o-calc(50% - 1.5em);
-				top: -ms-calc(50% - 1.5em);
-				top: calc(50% - 1.5em);
-				margin: -32px 0 0 0;
+		.fa.solo {
 			}
 		
-			.poptrox-popup:hover .nav-next,
-			.poptrox-popup:hover .nav-previous {
-				opacity: 0.5;
+			.fa.solo span {
+					display: none;
+				}
+
+		.fa:before {
+				display:inline-block;
+				font-family: FontAwesome;
+				font-size: 1.25em;
+				text-decoration: none;
+				font-style: normal;
+				font-weight: normal;
+				line-height: 1;
+				-webkit-font-smoothing:antialiased;
+				-moz-osx-font-smoothing:grayscale;
 			}
 
-			.poptrox-popup:hover .nav-next:hover,
-			.poptrox-popup:hover .nav-previous:hover {
-				opacity: 1.0;
-			}
+			.fa-lg{font-size:1.3333333333333333em;line-height:.75em;vertical-align:-15%}
+			.fa-2x{font-size:2em}
+			.fa-3x{font-size:3em}
+			.fa-4x{font-size:4em}
+			.fa-5x{font-size:5em}
+			.fa-fw{width:1.2857142857142858em;text-align:center}
+			.fa-ul{padding-left:0;margin-left:2.142857142857143em;list-style-type:none}.fa-ul>li{position:relative}
+			.fa-li{position:absolute;left:-2.142857142857143em;width:2.142857142857143em;top:.14285714285714285em;text-align:center}.fa-li.fa-lg{left:-1.8571428571428572em}
+			.fa-border{padding:.2em .25em .15em;border:solid .08em #eee;border-radius:.1em}
+			.pull-right{float:right}
+			.pull-left{float:left}
+			.fa.pull-left{margin-right:.3em}
+			.fa.pull-right{margin-left:.3em}
+			.fa-spin{-webkit-animation:spin 2s infinite linear;-moz-animation:spin 2s infinite linear;-o-animation:spin 2s infinite linear;animation:spin 2s infinite linear}
+			@-moz-keyframes spin{0%{-moz-transform:rotate(0deg)} 100%{-moz-transform:rotate(359deg)}}@-webkit-keyframes spin{0%{-webkit-transform:rotate(0deg)} 100%{-webkit-transform:rotate(359deg)}}@-o-keyframes spin{0%{-o-transform:rotate(0deg)} 100%{-o-transform:rotate(359deg)}}@-ms-keyframes spin{0%{-ms-transform:rotate(0deg)} 100%{-ms-transform:rotate(359deg)}}@keyframes spin{0%{transform:rotate(0deg)} 100%{transform:rotate(359deg)}}.fa-rotate-90{filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=1);-webkit-transform:rotate(90deg);-moz-transform:rotate(90deg);-ms-transform:rotate(90deg);-o-transform:rotate(90deg);transform:rotate(90deg)}
+			.fa-rotate-180{filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=2);-webkit-transform:rotate(180deg);-moz-transform:rotate(180deg);-ms-transform:rotate(180deg);-o-transform:rotate(180deg);transform:rotate(180deg)}
+			.fa-rotate-270{filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=3);-webkit-transform:rotate(270deg);-moz-transform:rotate(270deg);-ms-transform:rotate(270deg);-o-transform:rotate(270deg);transform:rotate(270deg)}
+			.fa-flip-horizontal{filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1);-webkit-transform:scale(-1, 1);-moz-transform:scale(-1, 1);-ms-transform:scale(-1, 1);-o-transform:scale(-1, 1);transform:scale(-1, 1)}
+			.fa-flip-vertical{filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1);-webkit-transform:scale(1, -1);-moz-transform:scale(1, -1);-ms-transform:scale(1, -1);-o-transform:scale(1, -1);transform:scale(1, -1)}
+			.fa-stack{position:relative;display:inline-block;width:2em;height:2em;line-height:2em;vertical-align:middle}
+			.fa-stack-1x,.fa-stack-2x{position:absolute;left:0;width:100%;text-align:center}
+			.fa-stack-1x{line-height:inherit}
+			.fa-stack-2x{font-size:2em}
+			.fa-inverse{color:#fff}
+
+			.fa-facebook-square:before{content:"\f082"}
+			.fa-facebook:before{content:"\f09a"}		
 			
-			.poptrox-popup .nav-previous:before
-			{
-				-moz-transform: scaleX(-1);
-				-webkit-transform: scaleX(-1);
-				-o-transform: scaleX(-1);
-				-ms-transform: scaleX(-1);
-				transform: scaleX(-1);
-				-ms-filter: "FlipH";			
-				filter: FlipH;
-			}
+			.fa-twitter:before{url(images\\twitter.svg)}
 
-		.poptrox-popup .nav-next {
-			right: 0;
-		}
-
-			.poptrox-popup .nav-next:before {
-				right: 0;
-			}
-		
-		.poptrox-popup .nav-previous {
-			left: 0;
-		}
-
-			.poptrox-popup .nav-previous:before {
-				left: 0;
-			}
+			.fa-github:before{content:"\f09b"}
 			
-		.poptrox-popup .closer {
-			position: absolute;
-			top: 0;
-			right: 0;
-			width: 64px;
-			height: 64px;
-			text-indent: -9999px;
-			z-index: 2;
-			opacity: 0;
-			-moz-transition: opacity 0.2s ease-in-out;
-			-webkit-transition: opacity 0.2s ease-in-out;
-			-o-transition: opacity 0.2s ease-in-out;
-			-ms-transition: opacity 0.2s ease-in-out;
-			transition: opacity 0.2s ease-in-out;
-			-webkit-tap-highlight-color: rgba(255,255,255,0);
-		}
-		
-			.poptrox-popup .closer:before {
-				content: '';
-				display: block;
-				position: absolute;
-				right: 16px;
-				top: 16px;
-				width: 40px;
-				height: 40px;
-				border-radius: 100%;
-				box-shadow: inset 0 0 0 2px #fff;
-				background: url('images/poptrox-closer.svg') center center;
-				color: #fff !important;
-			}
-
-			.poptrox-popup:hover .closer {
-				opacity: 0.5;
-			}
-
-			.poptrox-popup:hover .closer:hover {
-				opacity: 1.0;
-			}
+			.fa-pinterest:before{content:"\f0d2"}
+			.fa-pinterest-square:before{content:"\f0d3"}
+			
+			.fa-google-plus-square:before{content:"\f0d4"}
+			.fa-google-plus:before{content:"\f0d5"}
+			
+			.fa-dribbble:before{content:"\f17d"}	
+			
+			.fa-instagram:before{content:"\f16d"}
 
 
 
@@ -1071,3 +1031,7 @@
 			body.touch .poptrox-popup .closer {
 				opacity: 1.0 !important;
 			}
+
+
+
+
