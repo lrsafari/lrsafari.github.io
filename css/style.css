@@ -749,7 +749,7 @@
 
 
 /*********************************************************************************/
-/* Intro                                                                         */
+/* HOME                                                                         */
 /*********************************************************************************/
 
 	#home {
@@ -757,38 +757,36 @@
 		background: url('../images/defender.jpg');
 		background-size: cover;
 		background-attachment: fixed;
-		background-position: top left, bottom center;
+		background-position: bottom center;
 		background-repeat: no-repeat;
 	}
 
 /*********************************************************************************/
-/* One                                                                           */
+/* FINAL                                                                           */
 /*********************************************************************************/
 
 	#final {
 		background: url('../images/smc.jpg');
-		opacity= .25;
-		background-size: 1024px 1024px, cover;
-		background-attachment: fixed, fixed;
-		background-position: top left, center center;
+		background-size: cover;
+		background-attachment: fixed;
+		background-position: center center;
 	}
 
 /*********************************************************************************/
-/* Two                                                                           */
+/* MIDTERM                                                                           */
 /*********************************************************************************/
 
 	#midterm {
 /*		background-color: white;*/
-		background: url('images/overlay.png'), url(../images/flowchart.png);'
-		opacity= .25;
-		background-size: 1024px 1024px, cover;
-		background-attachment: fixed, fixed;
-		background-position: top left, center center;
+		background: url(../images/flowchart.png);
+		background-size: cover;
+		background-attachment: fixed;
+		background-position: center center;
 	}
 
 
 /*********************************************************************************/
-/* resume                                                                          */
+/* RESUME                                                                          */
 /*********************************************************************************/
 
 	#resume {
