@@ -1,4 +1,4 @@
-https://lrsafari.github.io/@charset 'UTF-8';
+@charset 'UTF-8';
 
 	@import 
 			url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900);
@@ -760,10 +760,10 @@ https://lrsafari.github.io/@charset 'UTF-8';
 
 	#home {
 		
-		background: url('../images/defender.jpg');
+		background: url(images/defender.jpg);
 		background-size: cover;
 		background-attachment: fixed;
-		background-position: top center;
+		background-position: bottom center;
 		background-repeat: no-repeat;
 	}
 
@@ -772,7 +772,7 @@ https://lrsafari.github.io/@charset 'UTF-8';
 /*********************************************************************************/
 
 	#final {
-		background: url('../images/smc.jpg');
+		background: url(images/smc.jpg);
 		background-size: cover;
 		background-attachment: fixed;
 		background-position: bottom center;
@@ -784,10 +784,11 @@ https://lrsafari.github.io/@charset 'UTF-8';
 /*********************************************************************************/
 
 	#midterm {
-		background: url('../images/flowchart.png');
+/*		background-color: white;*/
+		background: url(images/flowchart.png);
 		background-size: cover;
 		background-attachment: fixed;
-		background-position: bottom center;
+		background-position: center center;
 	}
 
 
