@@ -760,7 +760,7 @@
 
 	#home {
 		
-		background: url('../images/defender.jpg');
+		background: url('images/defender.jpg');
 		background-size: cover;
 		background-attachment: fixed;
 		background-position: bottom center;
@@ -772,7 +772,7 @@
 /*********************************************************************************/
 
 	#final {
-		background: url('../images/smc.jpg');
+		background: url('images/smc.jpg');
 		background-size: cover;
 		background-attachment: fixed;
 		background-position: bottom center;
@@ -785,7 +785,7 @@
 
 	#midterm {
 /*		background-color: white;*/
-		background: url(../images/flowchart.png);
+		background: url(images/flowchart.png);
 		background-size: cover;
 		background-attachment: fixed;
 		background-position: center center;
